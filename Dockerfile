@@ -11,7 +11,7 @@ RUN mkdir -p "$APP_HOME"
 
 WORKDIR "$APP_HOME"
 COPY * ./
-RUN go mod init beego-docker
+#RUN go mod init beego-docker
 RUN go mod tidy
 RUN go build -o /docker-beego-test
 
