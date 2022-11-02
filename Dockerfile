@@ -10,10 +10,11 @@ ENV APP_HOME $GOROOT/src/
 RUN mkdir -p "$APP_HOME"
 
 WORKDIR "$APP_HOME"
-COPY * ./
-#RUN go mod init beego-docker
-RUN go mod tidy
-RUN go build -o docker-beego
+
+COPY docker-beego ./
+
+#RUN go mod tidy
+#RUN go build -o docker-beego
 
 
 EXPOSE 8080
