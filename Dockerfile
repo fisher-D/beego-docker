@@ -7,7 +7,7 @@ ENV GO111MODULE=on
 ENV APP_HOME /root/gopath/src/beego-docker
 RUN mkdir -p "$APP_HOME"
 WORKDIR "$APP_HOME"
-
+RUN cd "$APP_HOME"
 COPY go.mod ./
 COPY go.sum ./
 RUN go mod tidy
