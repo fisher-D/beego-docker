@@ -5,7 +5,7 @@ ENV GO111MODULE=on
 
 RUN go install github.com/beego/bee/v2@latest
 
-ENV APP_HOME /app
+ENV APP_HOME $GOROOT/src/
 
 RUN mkdir -p "$APP_HOME"
 
