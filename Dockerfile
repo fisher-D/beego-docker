@@ -5,7 +5,7 @@ ENV GO111MODULE=on
 
 RUN go install github.com/beego/bee/v2@latest
 
-ENV APP_HOME /go/src/
+ENV APP_HOME /usr/local/go/src/beego-docker/
 
 RUN mkdir -p "$APP_HOME"
 
