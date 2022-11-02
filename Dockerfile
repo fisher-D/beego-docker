@@ -12,7 +12,8 @@ RUN mkdir -p "$APP_HOME"
 WORKDIR "$APP_HOME"
 
 COPY docker-beego ./
-
+COPY go.mod ./
+COPY go.sum ./
 #RUN go mod tidy
 #RUN go build -o docker-beego
 
