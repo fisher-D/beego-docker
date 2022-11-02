@@ -19,4 +19,4 @@ COPY docker-beego ./
 
 EXPOSE 8080
 
-CMD ["bee","run","/docker-beego"]
+CMD ["bee run docker-beego"]
