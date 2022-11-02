@@ -20,4 +20,4 @@ COPY go.sum ./
 
 EXPOSE 8080
 
-CMD ["bee run docker-beego"]
+CMD ["bee", "run"]
