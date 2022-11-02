@@ -13,9 +13,9 @@ WORKDIR "$APP_HOME"
 COPY * ./
 #RUN go mod init beego-docker
 RUN go mod tidy
-RUN go build -o /docker-beego-test
+RUN go build -o docker-beego
 
 
 EXPOSE 8080
 
-CMD ["bee","run","/docker-beego-test"]
+CMD ["bee","run","/docker-beego"]
